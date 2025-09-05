@@ -107,9 +107,9 @@ export const sampleProfile = {
   education: [
     {
       id: '1',
-      degree: 'Bachelor of Computer Science',
-      institution: 'University of California, Berkeley',
-      location: 'India',
+      degree: 'Bachelor of Engineering in Computer Science',
+      institution: 'Veltech Multitech Dr.Rangarajan Dr.Sakunthala Engineering College',
+      location: 'TamilNadu,India',
       graduationDate: '2023-05',
       gpa: '7.96/10',
       relevant_courses: ['Data Structures', 'Algorithms', 'Database Systems', 'Software Engineering'],
