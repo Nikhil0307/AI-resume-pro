@@ -38,7 +38,7 @@ export const sampleProfile = {
     email: 'vishalnikhil0307@gmail.com',
     phone: '+91-8667877361',
     location: 'chennai, TamilNadu, India',
-    website: 'https://nikhil-baskar.dev',
+    website: 'nikhil-baskar.dev',
     linkedin: 'linkedin.com/in/nikhil0307',
     github: 'github.com/nikhil0307',
   },
