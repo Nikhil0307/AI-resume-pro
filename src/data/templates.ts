@@ -49,7 +49,7 @@ export const sampleProfile = {
       title: 'Member Technical staff',
       company: 'ZohoCorp',
       location: 'India',
-      startDate: '2023-06',
+      startDate: '06-2023',
       endDate: 'Present',
       current: true,
       achievements: [
@@ -67,8 +67,8 @@ export const sampleProfile = {
       title: 'Project Trainee',
       company: 'ZohoCorp',
       location: 'India',
-      startDate: '2022-09',
-      endDate: '2023-05',
+      startDate: '09-2022',
+      endDate: '05-2023',
       current: false,
       achievements: [
         'Optimized inference service (200K+ req/day) → reduced latency from 150ms → 100ms using ONNX + caching',
