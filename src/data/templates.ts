@@ -110,7 +110,7 @@ export const sampleProfile = {
       degree: 'Bachelor of Engineering in Computer Science',
       institution: 'Veltech Multitech Dr.Rangarajan Dr.Sakunthala Engineering College',
       location: 'TamilNadu,India',
-      graduationDate: '2019-2023',
+      graduationDate: '05-2023',
       gpa: '7.96/10',
       relevant_courses: ['Data Structures', 'Algorithms', 'Database Systems', 'Software Engineering'],
     },
