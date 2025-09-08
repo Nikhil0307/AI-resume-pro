@@ -156,6 +156,22 @@ export default function ResumeCard({
     );
   };
 
+  const sanitize = (str?: string) =>
+    str?.trim().replace(/\s+/g, "-"); // turn spaces into hyphens
+
+  const company = sanitize(jobDescription?.company);
+  const userName = sanitize(userProfile?.personalInfo?.name);
+
+  let fileName = "resume.pdf";
+
+  if (company && userName) {
+    fileName = `${company}-${userName}-resume.pdf`;
+  } else if (company) {
+    fileName = `${company}-resume.pdf`;
+  } else if (userName) {
+    fileName = `${userName}-resume.pdf`;
+  }
+
   return (
     <div key={(resume as any).id} className="bg-white rounded-xl shadow-lg border-2 border-gray-200">
       <div className="p-6">
@@ -178,7 +194,7 @@ export default function ResumeCard({
 
           <PDFDownloadLink
             document={<ResumePDF resume={(resume as any).content} userProfile={userProfile} />}
-            fileName={`${(userProfile?.personalInfo?.name || 'candidate').replace(' ', '_')}_resume.pdf`}
+            fileName={fileName}
           >
             {({ loading }) => (
               <button className="bg-blue-600 text-white py-2 px-3 rounded-lg hover:bg-blue-700 text-sm flex items-center space-x-1">
